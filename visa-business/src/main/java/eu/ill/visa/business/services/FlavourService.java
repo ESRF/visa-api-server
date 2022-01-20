@@ -23,9 +23,8 @@ public class FlavourService {
     private HttpClient client;
 
     @Inject
-    public FlavourService(FlavourRepository repository, HttpClient client) {
+    public FlavourService(FlavourRepository repository) {
         this.repository = repository;
-        this.client = client;
     }
 
     public List<Flavour> getAll() {
@@ -49,12 +48,6 @@ public class FlavourService {
     }
 
     public List<Flavour> getAll(OrderBy orderBy, Pagination pagination) {
-        final Map<String, String> headers = null;
-        try {
-            this.client.sendRequest("", POST, headers);
-        } catch (CloudException e) {
-            
-        }
         return this.getAll(new QueryFilter(), orderBy, pagination);
     }
 
