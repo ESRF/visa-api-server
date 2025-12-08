@@ -1,3 +1,9 @@
+3.7.0 08/12/2025
+================
+ - Add flavour future availabilities and totals to Admin GraphQL Endpoints 
+ - Retrieve instances associated to each hypervisor
+ - Add extra hypervisor data to Admin GraphQL endpoints
+
 3.6.0 17/11/2025
 ================
  * Notify via redis load-balanced servers when cloud client configuration changes
